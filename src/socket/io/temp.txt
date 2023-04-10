@@ -1,0 +1,39 @@
+
+/* 
+    RECEIVED
+*/
+socket.on('messageReceived', (data) => {
+    console.log('received');
+    handleMessageReceived(data)
+})
+
+/* 
+    SENT
+*/
+socket.on('messageSent', (datas) => {
+    console.log('received');
+    handleMessageSent(datas)
+})
+
+/* 
+    STATUS
+*/
+socket.on('statusReceived', (data) => {
+    console.log('received');
+    handleMessageStatusReceived(data)
+})
+/* 
+    STATUS
+*/
+socket.on('statusReceived', (data) => {
+    console.log('received');
+    handleMessageStatusReceived(data)
+})
+
+/* 
+    ERROR STATUS
+*/
+socket.on('errorReceived', (data) => {
+    console.log('error', data);
+    
+})
